@@ -1,10 +1,11 @@
 <?php
 
-namespace App\Http\Enums;
+namespace App\Enums;
 
 trait Enumable
 {
-    public static function values() {
+    public static function values()
+    {
         $values = [];
 
         foreach (self::cases() as $case) {
@@ -14,7 +15,8 @@ trait Enumable
         return $values;
     }
 
-    public static function fromName($name) {
-        return constant('self::'.$name);
+    public static function fromName($name)
+    {
+        return constant('self::' . $name);
     }
 }

@@ -2,8 +2,6 @@
 
 namespace App\Enums;
 
-use App\Http\Enums\Enumable;
-
 enum IntroType: string
 {
     use Enumable;
