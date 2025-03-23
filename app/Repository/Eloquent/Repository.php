@@ -138,4 +138,8 @@ abstract class Repository implements RepositoryInterface
     {
         return $this->model::query()->whereHasMorph($relation, $class)->get();
     }
+    public function updateOrCreate(array $conditions, array $data): Builder|Model
+    {
+        return $this->model::query()->updateOrCreate($conditions, $data);
+    }
 }

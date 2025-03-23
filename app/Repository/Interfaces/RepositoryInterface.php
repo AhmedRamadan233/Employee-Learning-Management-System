@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 
-interface RepositoryInterface 
+interface RepositoryInterface
 {
     public function getAll(array $columns = ['*'], array $relations = []): Collection;
 
@@ -56,4 +56,5 @@ interface RepositoryInterface
     );
 
     public function whereHasMorph($relation, $class);
+    public function updateOrCreate(array $conditions, array $data): Builder|Model;
 }

@@ -23,11 +23,7 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
                     <li class="nav-item">
-                        <a class="nav-link" href="">profile</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="">courses</a>
+                        <a class="nav-link" href="{{ route('courses.index') }}">courses</a>
                     </li>
 
                     <li class="nav-item">
